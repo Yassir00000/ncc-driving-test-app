@@ -1,194 +1,205 @@
-# Test NCC - Professional Driving License
+# NCC Driving Test App
 
-A modern Android app for preparing for the NCC (Noleggio con Conducente - Hire Car with Driver) professional driving license exam with an intuitive interface and comprehensive study features.
+![Android App](https://img.shields.io/badge/Type-Android%20App-3DDC84?style=for-the-badge&logo=android&logoColor=white)
+![Java](https://img.shields.io/badge/Java-ED8B00?style=for-the-badge&logo=openjdk&logoColor=white)
+![APK Ready](https://img.shields.io/badge/APK-Ready%20to%20Install-brightgreen?style=for-the-badge&logo=android&logoColor=white)
 
-## Overview
+## The Problem → Solution → Impact
 
-The Test NCC app was developed to help candidates effectively prepare for the NCC professional driving license exam. It offers various study modes, bookmarked questions management, and a comprehensive review system.
+<div align="center">
 
-### Key Features
+| 🚫 **The Problem** | 💡 **The Solution** | 📈 **The Impact** |
+|:-------------------|:---------------------|:-------------------|
+| **Physical book study is limiting**<br/>Always carrying heavy study materials<br/>Dispersive learning experience | **Android quiz app**<br/>Interactive study modes<br/>Portable learning solution | **📱 Study anywhere, anytime**<br/>**⚡ Interactive learning**<br/>**🎯 Focused preparation** |
+| **Traditional memorization methods**<br/>Difficult progress tracking<br/>No immediate feedback | **Multiple quiz modes**<br/>Marathon and review sessions<br/>Question flagging system | **🚀 Faster memorization**<br/>**📊 Track progress**<br/>**✅ Immediate feedback** |
+| **Inefficient study sessions**<br/>No targeted weak point review<br/>Time-consuming preparation | **Smart review system**<br/>Flagged questions revisit<br/>Optimized study patterns | **⏱️ Efficient study time**<br/>**🔍 Focus on weak areas**<br/>**🎓 Better test preparation** |
 
-- **Quiz Mode**: Timed practice sessions with immediate feedback
-- **Marathon Mode**: Continuous study without time limits
-- **Review Mode**: Browse all questions with detailed explanations
-- **Bookmark System**: Save important questions for review
-- **Personal Progress**: Track your improvements over time
+</div>
 
-## App Screenshots
+---
 
-### Study Mode Selection
-<img src="images/quiz_modes_selection.jpg" alt="Quiz Mode Selection" width="300">
+## Why I Built This
 
-*Choose from different modes: Standard Quiz, Marathon Mode, Review Mode, or Flagged Questions*
+I was studying for the NCC driving license test using the physical book, but being always on the move made it impossible to carry the study material with me. The book format was really dispersive and inefficient for memorization.
 
-### Interactive Quiz Interface
+I decided to create this Android app to make learning faster and more interactive. The result? I could study effectively anywhere, with immediate feedback and smart review systems that helped me focus on the areas where I needed more practice.
+
+**The goal was simple:** Transform traditional book study into an engaging, portable, and efficient mobile learning experience.
+
+---
+
+## Screenshots
+
+<div>
+
+### Quiz Interface
 <img src="images/quiz_question_interface.jpg" alt="Quiz Question Interface" width="300">
 
-*Clean, intuitive interface for answering NCC driving license questions*
+*Clean interface with immediate feedback and progress tracking*
 
-### Review Mode
-<img src="images/homepage_review_mode.jpg" alt="Review Mode" width="300">
+### Study Mode Selection
+<img src="images/quiz_modes_selection.jpg" alt="Quiz Modes Selection" width="300">
 
-*Browse and search through all questions with detailed explanations*
+*Multiple study modes: Quiz, Marathon, and Review flagged questions*
 
-### Flagged Questions Management
+### Homepage & Review Mode
+<img src="images/homepage_review_mode.jpg" alt="Homepage Review" width="300">
+
+*Home dashboard with review mode for targeted studying*
+
+### Flagged Questions System
 <img src="images/flagged_questions.jpg" alt="Flagged Questions" width="300">
 
-*Keep track of questions that need additional review*
+*Smart flagging system to revisit difficult questions*
 
-## Feature Demonstrations
-
-### Quiz Mode Demo
+### Interactive Demo
 <img src="images/quiz_mode_web.gif" alt="Quiz Mode Demo" width="300">
 
 *Experience the timed quiz mode with immediate feedback*
 
-### Marathon Mode Demo
-<img src="images/marathon_mode_web.gif" alt="Marathon Mode Demo" width="300">
-
-*Practice with continuous question flow for comprehensive study*
-
-## Technologies Used
-
-### Framework and Languages
-- **Kotlin**: Modern programming language for Android
-- **Jetpack Compose**: Modern UI toolkit for native interfaces
-- **Android SDK**: Native Android development platform
-
-### Architecture
-- **MVVM Pattern**: Clean separation between business logic and UI
-- **Repository Pattern**: Centralized data management
-- **Reactive Programming**: Reactive interface with StateFlow/LiveData
-
-### Main Libraries
-- **Jetpack Compose**: Modern declarative UI
-- **Material Design 3**: Google design system for visual consistency
-- **Kotlin Coroutines**: Efficient asynchronous programming
-- **ViewModel & LiveData**: Lifecycle-aware UI state management
-
-## Project Structure
-
-```
-app/src/main/java/com/example/test_ncc_2/
-├── model/
-│   ├── Question.kt              # Question data model
-│   ├── TestResult.kt            # Quiz results
-│   └── TestResultRepository.kt  # Data management repository
-├── viewmodel/
-│   └── QuizViewModel.kt         # Quiz logic ViewModel
-├── ui/theme/
-│   ├── Color.kt                 # Color palette
-│   ├── Theme.kt                 # Theme configuration
-│   └── Type.kt                  # Typography
-└── MainActivity.kt              # Main activity
-```
-
-## Detailed Features
-
-### Smart Quiz System
-- **Question Randomization**: Random order to avoid mechanical memorization
-- **Configurable Timer**: Real exam condition simulation
-- **Immediate Feedback**: Detailed explanations for each answer
-- **Progress Statistics**: Accuracy and response time tracking
-
-### Personalized Study Management
-- **Bookmark System**: Save difficult questions
-- **Advanced Filters**: Search by topic or difficulty
-- **Answer History**: Review previous mistakes
-- **Offline Mode**: Study without internet connection
-
-### Interface Design
-- **Material Design 3**: Modern and accessible interface
-- **Dark/Light Theme**: Automatic system theme support
-- **Responsive Layout**: Optimized for different screen sizes
-- **Smooth Animations**: Fluid transitions between screens
-
-## System Requirements
-
-- **Android**: Version 7.0 (API level 24) or higher
-- **RAM**: 2GB minimum recommended
-- **Storage**: 50MB available space
-- **Connection**: Optional (app works offline)
-
-## Installation
-
-### From Source Code
-
-1. **Clone Repository**
-```bash
-git clone https://github.com/Yassir00000/test-driving-licence-ncc-android-app.git
-cd test-driving-licence-ncc-android-app
-```
-
-2. **Open in Android Studio**
-   - Launch Android Studio
-   - Select "Open an existing project"
-   - Navigate to the project folder
-
-3. **Build and Run**
-   - Sync Gradle dependencies
-   - Connect Android device or start emulator
-   - Click "Run" to install the app
-
-### Development Setup
-```bash
-# Verify Android SDK installation
-android --version
-
-# Build debug version
-./gradlew assembleDebug
-
-# Run tests
-./gradlew test
-```
-
-## App Usage
-
-### First Launch
-1. **Mode Selection**: Choose between Quiz, Marathon, or Review
-2. **Configuration**: Set timer and number of questions (Quiz mode)
-3. **Start Studying**: Begin your preparation session
-
-### Study Modes
-
-**Quiz Mode**
-- Timed sessions with fixed number of questions
-- Real exam condition simulation
-- Final result with success percentage
-
-**Marathon Mode** 
-- Continuous study without time limits
-- Ideal for thorough review
-- Progress automatically saved
-
-**Review Mode**
-- Free consultation of question database
-- Keyword search
-- Access to complete explanations
-
-## Development and Contributions
-
-### Technical Skills Demonstrated
-This project showcases competencies in:
-- **Native Mobile Development**: Android with modern Kotlin
-- **UI/UX Design**: Intuitive interfaces with Material Design
-- **Architecture Patterns**: MVVM, Repository, Clean Architecture
-- **Performance Optimization**: Memory management and battery-efficient code
-
-### Implemented Best Practices
-- **Clean Code**: Readable and maintainable code
-- **Testing**: Unit tests for business logic
-- **Documentation**: Code comments and documentation
-- **Version Control**: Git workflow with semantic commits
-
-## License
-
-Project developed for educational purposes and demonstration of technical skills in Android development.
-
-## Contact
-
-**Developer**: Yassir - [GitHub Profile](https://github.com/Yassir00000)
+</div>
 
 ---
 
-*App developed with Kotlin and Jetpack Compose for NCC professional driving license exam preparation*
+## Table of Contents
+
+- [Quick Start](#quick-start)
+- [Key Features](#key-features)
+- [Installation Guide](#installation-guide)
+- [Study Modes](#study-modes)
+- [Technical Details](#technical-details)
+- [Future Enhancements](#future-enhancements)
+
+---
+
+## Quick Start
+
+1. **Download the APK** from the repository
+2. **Enable installation** from unknown sources on your Android device
+3. **Install the app** by opening the APK file
+4. **Start studying** with interactive quiz modes
+
+**Ready to study in under 2 minutes.**
+
+---
+
+## Key Features
+
+### **Interactive Learning**
+- **Multiple quiz modes** for different study approaches
+- **Question flagging** system for targeted review
+- **Progress tracking** to monitor improvement
+- **Immediate feedback** on answers
+
+### **Smart Study Modes**
+- **Quiz Mode** - Standard question-by-question learning
+- **Marathon Mode** - Extended study sessions
+- **Review Mode** - Focus on previously flagged questions
+- **Mixed Practice** - Randomized question selection
+
+### **Mobile Optimization**
+- **Offline functionality** - No internet required
+- **Clean interface** designed for mobile learning
+- **Fast navigation** between questions and modes
+- **Progress persistence** across study sessions
+
+## Installation Guide
+
+### Android Installation
+1. **Download** the `quiz-ncc.apk` file from the repository
+2. **Enable Unknown Sources**:
+   - Go to Android Settings → Security
+   - Enable "Install from Unknown Sources"
+3. **Install the App**:
+   - Open the downloaded APK file
+   - Follow the installation prompts
+   - Launch the app from your home screen
+
+### System Requirements
+- Android 5.0 (API level 21) or higher
+- 50MB available storage space
+- No internet connection required after installation
+
+---
+
+## Study Modes
+
+### Quiz Mode
+- **Standard learning** with immediate feedback
+- **Question-by-question** progression
+- **Flag difficult questions** for later review
+
+### Marathon Mode
+- **Extended study sessions** for intensive preparation
+- **Continuous question flow** without interruptions
+- **Track session progress** and completion time
+
+### Review Mode
+- **Focus on flagged questions** from previous sessions
+- **Targeted improvement** of weak areas
+- **Progress tracking** for review completion
+
+### Question Management
+- **Flag system** for marking difficult questions
+- **Review history** to track improvement
+- **Smart randomization** for varied practice
+
+---
+
+## Technical Details
+
+### Architecture
+- **Native Android** development in Java
+- **SQLite database** for question storage and progress tracking
+- **Clean UI/UX** design for optimal learning experience
+- **Offline-first** approach for unrestricted studying
+
+### Development Approach
+- **Mobile-first design** optimized for smartphone screens
+- **Efficient memory management** for smooth performance
+- **Persistent data storage** for progress tracking
+- **User-friendly navigation** between study modes
+
+### Performance Features
+- **Fast app startup** for quick study sessions
+- **Smooth transitions** between questions
+- **Minimal battery usage** during extended sessions
+- **Optimized for older Android versions**
+
+---
+
+## Future Enhancements
+
+### **Study Analytics**
+- **Performance tracking** - Charts showing improvement over time
+- **Weak area identification** - Focus on difficult question categories
+
+### **Content Updates**
+- **Question bank refresh** - Regular updates with latest test materials
+- **Additional test categories** - Expand beyond NCC to other license types
+
+### **Study Optimization**
+- **Spaced repetition** - Intelligent question scheduling for better retention
+- **Study reminders** - Configurable notifications for consistent practice
+
+### **Progress Sharing**
+- **Export functionality** - Share study progress with instructors
+- **Study session backup** - Cloud sync for progress persistence
+
+---
+
+## License
+
+MIT License - see [LICENSE](LICENSE) file for details.
+
+**Note:** This app is designed for educational purposes. Users should verify current NCC test requirements with official sources.
+
+---
+
+<div align="center">
+
+**Built by [Yassir00000](https://github.com/Yassir00000)**
+
+*Practical automation tools for real business problems*
+
+</div>
